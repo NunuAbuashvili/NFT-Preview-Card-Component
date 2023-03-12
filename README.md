@@ -10,8 +10,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Nuca29/QR-Code-Component.git)
-- Live Site URL: [Live site URL here](https://nuca29.github.io/QR-Code-Component/)
+- Solution URL: [Solution URL here](https://github.com/NunuAbuashvili/NFT-Preview-Card-Component.git)
+- Live Site URL: [Live site URL here](https://nunuabuashvili.github.io/NFT-Preview-Card-Component/)
 
 ### Built with
 
