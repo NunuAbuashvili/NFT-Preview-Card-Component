@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verydarkbluebg: hsl(217, 54%, 11%);
+  --verydarkbluecard: hsl(216, 50%, 16%);
+  --verydarkblueline: hsl(215, 32%, 27%);
+  --light-cobalt-blue: hsl(215, 51%, 70%);
+  --aqua: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--verydarkbluebg);
+  font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  background-color: var(--verydarkbluecard);
+  max-width: 20.44rem;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container .image-container {
+  max-width: 100%;
+  height: 17.375rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--aqua);
+  border-radius: 0.5rem;
+  mix-blend-mode: normal;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_overlay img {
+  width: 2.75rem;
+  height: 2.7rem;
+}
+
+.image_overlay:hover {
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.bottom-container h1 {
+  color: var(--white);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.72px;
+  cursor: pointer;
+}
+
+.bottom-container h1:hover {
+  color: var(--aqua);
+}
+
+.bottom-container .introduction {
+  color: var(--light-cobalt-blue);
+  width: 100%;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 1rem 0 1rem 0;
+}
+
+.bottom-container .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.details .ethereum,
+.details .days {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ethereum .amount,
+.days .amountDays {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ethereum .amount {
+  color: var(--aqua);
+}
+
+.days .amountDays {
+  color: var(--light-cobalt-blue);
+}
+
+.bottom-container .horizontal-line {
+  border-bottom: 1px solid var(--light-cobalt-blue);
+}
+
+.bottom-container .creator-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 1.375rem;
+}
+
+.creator-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.creator-details .creator-image img {
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--white);
+  border-radius: 3.125rem;
+}
+
+.creator-details .creator-information {
+  font-family: inherit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.16px;
+  color: var(--light-cobalt-blue);
+}
+
+span {
+  color: var(--white);
+}
+
+span:hover {
+  cursor: pointer;
+  color: var(--aqua);
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 21.88rem;
+  }
+
+  .container .image-container {
+    height: 18.875rem;
+  }
+
+  .ethereum .amount,
+  .days .amountDays {
+    font-size: 1rem;
+  }
+
+  .creator-details .creator-information {
+    font-size: 1rem;
+  }
+}
